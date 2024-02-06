@@ -103,25 +103,7 @@ namespace BinMultiCopy {
                             break;
                         }
                         catch (Exception ex) {
-                            Console.WriteLine($"got exception {ex.GetType()} while replacing '{destFile}': {ex.Message}");
-                            //try {
-                            //    Console.WriteLine($"deleting {destFile}");
-                            //    File.Delete(destFile);
-                            //}
-                            //catch (Exception) {
-                            //    string tempDest = string.Empty;
-                            //    for (int trial = 0; trial < 100; ++trial) {
-                            //        try {
-                            //            tempDest = foe + $".{trial:d3}";
-                            //            File.Move(destFile, Path.Combine(dest, tempDest));
-                            //            break;
-                            //        }
-                            //        catch (Exception mfex) {
-                            //            Console.WriteLine($"failed to move {destFile} to {tempDest} {mfex.GetType()}: {mfex.Message}");
-                            //            continue;
-                            //        }
-                            //    }
-                            //}
+                            Console.WriteLine($"got exception {ex.GetType()} while replacing '{destFile}': {ex.Message}");                            
                         }
                     }
                     Console.WriteLine($" -> {destFile}");
