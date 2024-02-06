@@ -1,0 +1,5 @@
+.vs/
+bin/
+obj/
+BuildVersion.cs
+*.csproj.user
